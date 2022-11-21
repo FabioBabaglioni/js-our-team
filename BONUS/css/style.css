@@ -9,6 +9,16 @@ header{
     text-align: center;
 }
 
-#team{
-    padding-top: 20px;
+main{
+    background-color: lightgreen;
+    width: 60%;
+    border-radius: 40px;
+    margin: 0 auto;
+
+}
+
+
+img{
+    border-radius: 50%;
+    width: 60%;
 }

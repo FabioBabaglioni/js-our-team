@@ -73,8 +73,11 @@ for(let i = 0; i <= team.length; i++){
 
 
     // stampo nel dom la stringa e le foto correlate
-    element.innerHTML = `<img src="${teamIesimo.foto}" alt=""> <br> ${teamIesimo.name} <br> ${teamIesimo.ruolo} `
+    element.innerHTML = `<img src="${teamIesimo.foto}" alt=""> <br> <strong>${teamIesimo.name}</strong> <br> ${teamIesimo.ruolo} `
     element.classList.add("col-4")
+    element.classList.add("text-center")
+    element.classList.add("pt-5")
+
 
 
     // inserisco nel dom il div creato con la stringa
