@@ -65,15 +65,15 @@ for(let i = 0; i <= team.length; i++){
     console.log(teamIesimo)
 
     // dichiaro le variabili
-    let container = document.getElementById("team")
-    // let container = document.getElementsByClassName("row")
+    // let container = document.getElementById("team")
+    let container = document.querySelector(".row")
 
     // creo l'elemento div
     let element = document.createElement("div")
 
 
     // stampo nel dom la stringa e le foto correlate
-    element.innerHTML = `<img src="${teamIesimo.foto}" alt=""> ${teamIesimo.name} <br> ${teamIesimo.ruolo} `
+    element.innerHTML = `<img src="${teamIesimo.foto}" alt=""> <br> ${teamIesimo.name} <br> ${teamIesimo.ruolo} `
     element.classList.add("col-4")
 
 
