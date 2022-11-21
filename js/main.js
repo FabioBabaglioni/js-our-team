@@ -5,7 +5,7 @@
 
 // MILESTONE 0:
 // Creare l’array di oggetti con le informazioni fornite.
-const Team = [
+const team = [
 
     {
         "name" : "Wayne Barnett",
@@ -44,12 +44,17 @@ const Team = [
     },
 ]
 
-console.log(Team);
+console.log(team);
 
 
 // MILESTONE 1:
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 
+for(let i = 0; i < team.length; i++){
+    let teamIesimo = team[i]
+
+    console.log(teamIesimo)
+}
 
 
 // MILESTONE 2:
