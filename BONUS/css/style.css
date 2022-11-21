@@ -1,0 +1,10 @@
+header{
+    background-color: blue;
+    height: 100px;
+}
+
+#title{
+    color: orange;
+    font-size: 30px;
+    text-align: center;
+}

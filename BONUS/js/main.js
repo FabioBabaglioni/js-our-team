@@ -66,13 +66,15 @@ for(let i = 0; i <= team.length; i++){
 
     // dichiaro le variabili
     let container = document.getElementById("team")
+    // let container = document.getElementsByClassName("row")
 
     // creo l'elemento div
     let element = document.createElement("div")
 
 
     // stampo nel dom la stringa e le foto correlate
-    element.innerHTML = `${teamIesimo.name} ${teamIesimo.ruolo} <img src="${teamIesimo.foto}" alt="">`
+    element.innerHTML = `<img src="${teamIesimo.foto}" alt=""> ${teamIesimo.name} <br> ${teamIesimo.ruolo} `
+    element.classList.add("col-4")
 
 
     // inserisco nel dom il div creato con la stringa
