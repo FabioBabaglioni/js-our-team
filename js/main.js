@@ -50,12 +50,31 @@ console.log(team);
 // MILESTONE 1:
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 
-for(let i = 0; i < team.length; i++){
-    let teamIesimo = team[i]
+// for(let i = 0; i < team.length; i++){
+//     let teamIesimo = team[i]
 
-    console.log(teamIesimo)
-}
+//     console.log(teamIesimo)
+// }
 
 
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
+for(let i = 0; i < team.length; i++){
+    let teamIesimo = team[i]
+
+    console.log(teamIesimo)
+
+    // dichiaro le variabili
+    let container = document.getElementById("team")
+
+    // creo l'elemento div
+    let element = document.createElement("div")
+
+
+    // stampo nel dom la stringa
+    element.innerHTML = `${teamIesimo.name} ${teamIesimo.ruolo} ${teamIesimo.foto}`
+
+
+    // inserisco nel dom il div creato con la stringa
+    container.append(element)
+}
